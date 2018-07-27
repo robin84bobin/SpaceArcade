@@ -1,0 +1,12 @@
+Bonus
+++++++++++++++
+type drop
+item "gun"
+amount 1
+
+++++++++++++++
+type drop
+item "coin"
+amount 10
+
+++++++++++++++

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<container>
+  <enemies>
+
+    <enemy>
+      <id>1</id>
+      <prefab>Enemy</prefab>
+
+      <drop>
+        <drop_prefab>GunBonus</drop_prefab>
+        <drop_prefab>CoinBonus</drop_prefab>
+        <drop_prefab>CoinBonus</drop_prefab>
+        <drop_prefab>CoinBonus</drop_prefab>
+        <drop_prefab>CoinBonus</drop_prefab>
+        <drop_prefab>CoinBonus</drop_prefab>     
+      </drop>
+    
+    </enemy>
+    
+    <enemy>
+      <id>2</id>
+      <prefab>Enemy</prefab>
+      <equips>
+        <equip>
+          <type>Weapon</type>
+          <id>1</id>
+        </equip>
+        <equip>
+          <type>Helmet</type>
+          <id>1</id>
+        </equip>
+      </equips>
+
+      <drop>
+        <prefabs>
+          <prefab>GunBonus</prefab>
+          <prefab>Coin</prefab>
+          <prefab>Coin</prefab>
+          <prefab>Coin</prefab>
+          <prefab>Coin</prefab>
+          <prefab>Coin</prefab>
+        </prefabs>
+
+      </drop>
+    </enemy>
+    
+  </enemies>
+  
+</container>
+
+
+

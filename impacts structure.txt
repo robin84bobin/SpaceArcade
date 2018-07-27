@@ -1,0 +1,41 @@
+На актера вешаются компоненты, унаследованные от класса AbstractImpact:
+DamageImpact - для врагов, астероидов и прочего, что может нанести урон при сталкновении
+SkillImpact - аптечки,
+ItemImpact - шмотки, оружие и т.п.
+
+При сталкновении:
+impacts = other.getComponents<AbstractImpact>();
+for each (impact in impacts) impact.apply(this); 
+
+
+DamageImpact
++++++++++++++++++++++
+impact type  = damage
+damage type  = fire
+damage value = 5
+* timer period = 1
+* timer value  = 10
+
++++++++++++++++++++++
+impact type  = damage
+damage type  = poison
+damage value = 5
+* timer period = 1
+* timer value  = 10
+
++++++++++++++++++++++
+impact type  = damage
+damage type  = hit
+damage value = 5
+
+
+SkillImpact
++++++++++++++++++++++ 
+impact type = skill
+skills = [health]
+value  = 100
+* applyStrategy = normal
+* timer period = 1
+* timer value  = 10
+
+

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<container>
+  <weapons>
+
+    <weapon>
+      <id>1</id>
+      <prefab>Gun</prefab>
+      <bulletPrefab>Bullet</bulletPrefab>
+      <bulletCount>100</bulletCount>
+      <shotFreq>0.3</shotFreq>
+    </weapon>
+    
+    <weapon>
+      <id>2</id>
+      <prefab>FlameThrower</prefab>
+      <bulletPrefab>FireBullet</bulletPrefab>
+      <bulletCount>100</bulletCount>
+      <shotFreq>1</shotFreq>
+    </weapon>
+
+    <weapon>
+      <id>3</id>
+      <prefab>RocketLauncher</prefab>
+      <bulletPrefab>Rocket</bulletPrefab>
+      <bulletCount>10</bulletCount>
+      <shotFreq>2</shotFreq>
+    </weapon>
+    
+  </weapons>
+  
+  
+</container> 
