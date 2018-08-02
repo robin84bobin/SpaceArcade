@@ -7,9 +7,7 @@ using UnityEngine;
 public class WeaponModel : EquipModel
 {
     public WeaponData _data { get; private set; }
-
     public Parameter Ammo { get; private set; }
-
     private float _nextShotTime = 0f;
 
 

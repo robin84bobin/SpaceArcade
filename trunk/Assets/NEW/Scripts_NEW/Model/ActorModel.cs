@@ -10,12 +10,6 @@ public class ActorModel : EntityModel
 
     public event Action<EquipSlotModel> onInitSlot = delegate { };
 
-    public event Action<EquipModel> onEquipped = delegate { };
-    protected void OnEquipped(EquipModel equip) { onEquipped.Invoke(equip); }
-
-    public event Action<EquipModel> onUnquipped = delegate { };
-    protected void OnUnquipped(EquipModel equip) { onUnquipped.Invoke(equip); }
-
     
     public ActorModel(EntityData data = null):base()
     {

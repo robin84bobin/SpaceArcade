@@ -6,7 +6,7 @@ public class PartController : ScrollablePart
 
     void Start()
     {
-        var tr = transform.FindChild("BG");
+        var tr = transform.Find("BG");
         if (tr != null) tr.gameObject.SetActive(false);
     }
 
