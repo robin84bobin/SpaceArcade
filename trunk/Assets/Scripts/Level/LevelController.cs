@@ -44,8 +44,6 @@ public class LevelController : MonoBehaviour
         _model.Init(_levelData);
     }
 
-   
-
     private IEnumerator RespawnHero()
     {
         yield return new WaitForSeconds(3f);

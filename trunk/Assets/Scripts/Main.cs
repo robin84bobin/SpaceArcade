@@ -39,7 +39,7 @@ public class Main : MonoBehaviour
 
     void Init()
     {
-        Screen.orientation = ScreenOrientation.Landscape;
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
         DontDestroyOnLoad(gameObject);
 
         //Managers initialisation
