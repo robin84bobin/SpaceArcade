@@ -10,7 +10,6 @@ public class HeroModel : ActorModel
     public Parameter Speed = new Parameter(ParamName.SPEED, 1f, 5f, 0f);
     public Parameter Health = new Parameter(ParamName.HEALTH, 100f, 100f, 0f);
 
-    private ActorData _data;
 
     protected override void OnDefeat()
     {

@@ -41,6 +41,8 @@ public class LevelController : MonoBehaviour
 
     void Init()
     {
+        _levelData = DataController.Instance.Get<LevelData>(1);
+        _model = new LevelModel();
         _model.Init(_levelData);
     }
 
@@ -59,8 +61,7 @@ public class LevelController : MonoBehaviour
     private void OnHeroDeathEvent()
     {
         ObjectPool.instance.PoolObject(Hero.gameObject);
-
-            StartCoroutine(RespawnHero());
+        StartCoroutine(RespawnHero());
     }
 
     /// <summary>
@@ -80,7 +81,7 @@ public class LevelController : MonoBehaviour
 
     public void Win()
     {
-        //TODO show somethig pleasant;
+        //TODO show something pleasant;
     }
 
     public void OnGameOver()

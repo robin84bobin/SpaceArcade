@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class ActorModel : EntityModel
 {
-    private ActorData _data;
+    protected ActorData _data;
 
     public event Action<EquipSlotModel> onInitSlot = delegate { };
 

@@ -30,6 +30,10 @@ public class DataController
     {
         _dataStoragesMap = new Dictionary<string, IBaseStorage>();
         //test
+        BaseStorage<LevelData> levelStorage = new BaseStorage<LevelData>();
+        levelStorage.Add(1, new LevelData() {heroRespawnDelay = 1f, levelMode = LEVEL_WIN_MODE.TIMER_MODE});
+        _dataStoragesMap.Add(typeof(LevelData).Name, levelStorage);
+        
         BaseStorage<EntityData> enemyStorage = new BaseStorage<EntityData>();
         enemyStorage.Add(1, new EntityData() { entity_class = ENTITY_TYPE.ENEMY });
         enemyStorage.Add(2, new EntityData() { entity_class = ENTITY_TYPE.ENEMY });

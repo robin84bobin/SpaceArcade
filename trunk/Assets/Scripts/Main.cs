@@ -14,15 +14,6 @@ public class Main : MonoBehaviour
     public UIManager UI { get; private set; }
     public DropManager Drop { get; private set; }
 
-    private DataController _data;
-    public DataController Data
-    {
-        get
-        {
-            return _data;
-        }
-    }
-
     [NonSerialized]
     public LevelController level;
     

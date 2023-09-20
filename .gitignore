@@ -4,3 +4,9 @@ trunk/.vs
 trunk/trunk.sln
 trunk/trunk.csproj
 trunk/trunk.Editor.csproj
+trunk/Logs
+trunk/Logs
+trunk/UserSettings
+trunk/Logs/*
+*.log
+trunk/UserSettings/

@@ -5,7 +5,7 @@ using System.Text;
 using UnityEngine;
 
 
-[Serializable]
+[Serializable][CreateAssetMenu(fileName = "LevelData", menuName = "Data/Level")]
 public class LevelData : BaseData
  {
     public LEVEL_WIN_MODE levelMode;

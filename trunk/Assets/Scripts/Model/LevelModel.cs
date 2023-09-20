@@ -29,6 +29,15 @@ using System.Text;
         mode.Add(LEVEL_WIN_MODE.TIMER_MODE, new TimeLevelMode(this));
         mode.SetState(data.levelMode);
 
+        Hero = new HeroModel();
+        Hero.Init(new ActorData()
+        {
+            entity_class = ENTITY_TYPE.PLAYER,
+            equipSlotTypes = new [] { EquipmentType.ARMOR , EquipmentType.MAGNET, EquipmentType.WEAPON, EquipmentType.INVULNIRABILITY},
+            id = 1,
+            prefab = "Hero"
+        });
+        
         Hero.onDefeat += OnHeroDefeat;
         EventManager.Get<AddScoreEvent>().Subscribe(OnAddScoreEvent);
     }
@@ -38,6 +47,7 @@ using System.Text;
         Lives = new Parameter(_data.livesCount, _data.livesCount, 0f);
         Score = new Parameter(0f, _data.scoreToWin, 0f);
         Time = new Parameter(_data.time, _data.time, 0f);
+        
     }
 
     private void OnHeroDefeat()
